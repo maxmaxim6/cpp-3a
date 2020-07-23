@@ -202,14 +202,6 @@ namespace solver
         return t;
 
     }
-    // ComplexVariable operator/(ComplexVariable& cv1, ComplexVariable& cv2)
-    // {
-    //     complex<double> a(cv1.a.real() / cv2.a.real(), cv1.a.imag() / cv2.a.imag());
-    //     complex<double> b(cv1.b.real() / cv2.b.real(), cv1.b.imag() / cv2.b.imag());
-    //     complex<double> c(cv1.c.real() / cv2.c.real(), cv1.c.imag() / cv2.c.imag());
-    //     ComplexVariable t(a, b, c);
-    //     return t;
-    // }
     ComplexVariable operator==(const ComplexVariable& cv1, const ComplexVariable& cv2)
     {
         return cv1 - cv2;
